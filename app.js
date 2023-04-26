@@ -10,10 +10,9 @@ app.use(express.urlencoded({ extended: false }));
 
 const jwt = require("jsonwebtoken");
 
-const JWT_SECRET =
-  "efgmj32oiufh239fbn0fh209rehj1+2rjhqwioth239p8h910+hrt3qr32rh3289tgh3480ytgbnh3o94rhjnq¨trqwom";
+const JWT_SECRET = JWT_SECRET;
 
-  const mongoUrl="mongodb+srv://danijelgitanovic:zcs36pfh@cluster.dmnaspm.mongodb.net/?retryWrites=true&w=majority"
+  const mongoUrl = process.env.MONGO_URL;
 
 
   mongoose.connect(mongoUrl,{
